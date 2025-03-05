@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('images/owp-rocksolid-img-gallery-010.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.yellow-text {
+    color: #ffca80;
+}
+.line1 {
+    height: 0.3rem;
+    background-color: #ffca80;
+    width: 8rem;
+}
+.line2 {
+    height: 0.1rem;
+    background-color: #ffca80;
+    width: 8rem;
+}
+
+.line3 {
+    height: 0.07px;
+    background-color: #ffca80;
+    width: 22rem;
+}
+.logo:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.main-web-link>a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.main-web-link>a:hover {
+    color: #ffca80;
+}
+header>nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242526;
+    height: 4em;
+    font-weight: bolder;
+}
+
+header>nav>ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 1rem;
+    font-family: "Open Sans";
+}
+
+header>nav>ul>li {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+header>nav>ul>li:hover {
+        color: #ffca80;
+}
+
+.sections {
+    height: 100vh;
+    padding-inline: 10rem;
+    padding-block: 5rem;
+}
+
+/* BACKGROUND IMAGES */
+#sectionA {
+    background: url(images/owp-rocksolid-img-002.jpg);
+    background-position: center 0px;
+    background-repeat: none;
+    color: white;
+    display: flex;
+    justify-content: right;
+    padding-right: 8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 3rem;
+    /* gap: 1.5rem; */
+    width: 530px;
+    height: 550px;
+    background: rgba(115, 106, 106, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(212, 198, 198, 0.31);
+}
+
+.card-text>h1 {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    width: 25rem;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.card-text>p {
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+}
+
+.sectionA-btn {
+    gap: 1rem;
+    display: flex;
+}
+
+.sections>.card>.sectionA-btn>button {
+    height: 4rem;
+    width: 12rem;
+    border: 0px solid;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: large;
+    font-family: "Poppins";
+}
+
+#sectionA-btnA {
+    background-color: #ffca80;
+    transition: 0.3s ease-in-out;
+}
+
+#sectionA-btnA:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: scale(0.85);
+}
+
+#sectionA-btnB {
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#sectionA-btnB:hover {
+    cursor: pointer;
+    background-color: #ffca80;
+    color: black;
+    transform: scale(0.85);
+
+}
+
+#sectionB {
+    background-color: #242526;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    height: auto;
+}
+
+.para1 {
+    color: #ffca80;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+}
+
+.sectionB-leftside>h1 {
+    font-size: 2.5rem;
+    color: white;
+    width: 35rem;
+    font-family: "Poppins";
+    margin: 0px;
+}
+
+
+.para2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: "Poppins";
+    line-height: 2rem;
+}
+
+/* SECTION B RIGHT SIDE CONTENT  */
+.sectionB-rightside {
+    width: 50%;
+}
+
+.sectionB-rightside {
+    width: 182%;
+    height: 478px;
+    background-image: url('images/owp-rocksolid-img-gallery-013-600x600.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+.sectionB-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.sectionB-link>a {
+    text-decoration: none;
+    color: #ffca80;
+    font-family: "Poppins";
+}
+
+.sectionB-link>i {
+    color: #ffca80;
+    font-size: 2rem;
+}
+
+.sectionB-link:hover {
+    transition: 0.2s ease-in;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+/* SECTION C  */
+#sectionC {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    gap: 3rem;
+    height: auto;
+    padding-block: 3rem;
+}
+
+#sectionC>.stepA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionC>.stepA>p {
+    color: #ffca80;
+}
+
+#sectionC>.stepA>h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#sectionC>.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionC>.scroll>div>i {
+    font-size: 3rem;
+    color: #ffca80;
+}
+
+#sectionC>.scroll>p {
+    color: white;
+    width: 60rem;
+    text-align: center;
+}
+
+#sectionC>.client {
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+}
+
+#sectionC>.client>img {
+    border-radius: 50%;
+    height: 5rem;
+}
+
+#sectionC>.client>div {
+    margin-left: 0.5rem;
+}
+#sectionC>.client>div>h3 {
+    margin-bottom: 0;
+}
+#sectionC>.client>div>p {
+    margin-top: 0;
+}
+
+.horizontal-image-section {
+    background-color: #111111;
+    /* height: 20rem; */
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#sectionD {
+    height: auto;
+    background-color: #242526;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+#sectionD>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#sectionD>div>p {
+    color: #ffca80;
+    /* margin-top: 3rem; */
+    margin: 0;
+}
+
+#sectionD>div>h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#sectionD>.cards {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: auto;
+    gap: 1rem;
+}
+
+#sectionD>.cards>.card-1 {
+    height: auto;
+    width: 400px;
+    background-color: #030202;
+    text-decoration: none;
+    padding: 2rem;
+    border: 1px solid #ffca80;
+    border-radius: 8px;
+    line-height: 2rem;
+
+}
+#sectionD>.cards>.card-1>h1 {
+    margin: 0;
+}
+#sectionD>.cards>.card-1>p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.features>ul {
+    text-align: center;
+    list-style: none;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features>ul>li>i {
+    margin-right: 0.5rem;
+    color: #ffca80;
+    font-size: 1.2rem;
+}
+
+#sectionD>.cards>.card-1>.features {
+    margin-top: 1.5rem;
+}
+
+#sectionD>.cards>.card-1>.button-subscription {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+#sectionD>.cards>.card-1>.button-subscription>button {
+    background-color: #ffca80;
+    width: 20rem;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s ease-in-out;
+}
+
+#sectionD>.cards>.card-1>.button-subscription>button:hover {
+    cursor: pointer;
+    background-color: white;
+    transform: scale(0.95);
+}
+
+.transparent {
+    height: auto;
+    padding-block: 5rem;
+    padding-inline: 10rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Frosted glass effect (optional) */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+.transparent > p {
+    margin: 5px;
+    width: 50rem;
+    line-height: 1.8rem;
+}
+.num {
+    font-size: 2rem;
+}
+.trans-but {
+    background-color: #ffca80;
+    width: 20rem;
+    height: 2.8rem;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s ease-in-out;
+}
+.trans-but:hover {
+    cursor: pointer;
+    background-color: white;
+    transform: scale(0.95);
+}
+#sectionE {
+    background-color: #242526;
+    color: white;
+    font-family: "Open Sans";
+    height: auto;
+}
+.imagex {
+    background-color: #ffca80;
+    width: 15rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+#sectionE > p {
+    width: 30rem;
+    line-height: 1.8rem;
+}
+.fa-fa-icons {
+    font-size: 1.8rem;
+}
+.fa-fa-icons > i {
+    margin-right: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+.fa-fa-icons > i:hover {
+    cursor: pointer;
+    color: #ffca80;
+    transform: scale(0.95);
+}
+.footer-part-top .part1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-part-top > .part1 > div > h1 {
+    margin-bottom: 0;
+}
+.footer-part-top > .part1 > div > ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2rem;
+    transition: 0.3s ease-in-out;
+}
+.footer-part-top > .part1 > div > ul > li > i {
+    color: #ffca80;
+    margin-right: 0.5rem;
+}
+.part1 > div > ul > li:hover {
+    color: #ffca80;
+    cursor: pointer;
+}
+.contact > ul > li {
+    transition: 0.3s ease-in-out;
+}
+.contact > ul > li:hover {
+    color: #ffca80;
+}
+.linex {
+    background-color: #ffca80;
+    height: 15rem;
+    width: 1px;
+}
+footer {
+    background-color: #242526;
+    color: white;
+}
+span {
+    color: crimson;
+}
+.linexx {
+    background-color: #ffca80;
+    height: 0.1rem; 
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

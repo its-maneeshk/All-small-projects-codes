@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="https://kit.fontawesome.com/415161d9d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <h1 class="logo-text" title="Greeting from developer">calc<span>.io</span></h1>
+            </a>
+            <div class="nav-left">
+                <a href="info.html" class="trn-scl" title="Page's info"><i class="fa-solid fa-circle-info"></i></a>
+                <a href="developer-detail.html" title="Devloper info"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-divider-line"></div>
+
+    <div class="rectangle-nackground-card"></div>
+
+    <section>
+        <div class="left-card">
+            <div class="part-one">
+                <h2>Welcome to Calculator.io <i class="fa-solid fa-handshake"></i></h2>
+                <p>
+                    Need quick calculations? <b>calc.io</b> is here to make your life easier! You can solve basic
+                    calculations using this calculator. Simply use the buttons on the right to input numbers and
+                    operators, and the result will be displayed instantly.
+                </p>
+                <strong>Features</strong>
+                <ul class="part-one-features">
+                    <li>Basic arithmetic: Addition, subtraction, multiplication, and division.</li>
+                    <li>Backspace button to correct mistakes.</li>
+                    <li>Clear button to reset the screen.</li>
+                </ul>
+            </div>
+            <div class="part-two">
+                <h2>Did You Know? <i class="fa-regular fa-lightbulb"></i></h2>
+                <ul style="margin-left: 60px;">
+                    <li>The first mechanical calculator was invented in 1642 by Blaise Pascal.</li>
+                    <li>A pocket calculator can solve math problems millions of times faster than the human brain!</li>
+                    <li>Modern calculators can perform functions beyond basic math, like trigonometry and logarithms.
+                    </li>
+                </ul>
+                <p>
+                    Ready to make your calculations easy and fun? Start now!
+                </p>
+            </div>
+            <div class="part-three-developer-detail">
+                <h2>About the Developer <i class="fa-solid fa-code"></i></h2>
+                <p>
+                    This calculator was developed with <i class="fa-solid fa-heart"></i> by <strong><a href="#"
+                            class="dev-links">its_maneeshk_</a></strong>. This project was created for learning
+                    purposes, specifically to practice <b>JavaScript</b>.
+                </p>
+                <p>
+                    Last worked on: <strong>20/12/2024 03:12:50 PM</strong>
+                </p>
+                <p>
+                    Feel free to <a href="mailto:maneeshkurmii@gmail.com" class="dev-links">reach</a> out for feedback
+                    or collaboration on similar projects!
+                </p>
+            </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="card">
+            <div class="insideCalc">
+                <p class="calculatorText">Basic Calculator</p>
+                <input type="text" id="answerScreen" readonly placeholder="0000000000000000">
+                <div class="errorDiv">
+                    <p id="errorMessage"> </p>
+                </div>
+
+                <div class="buttons-collection">
+                    <div class="first-row">
+                        <button style="background-color: #23a056;" onclick="appendOperator('/')"><i
+                                class="fa-solid fa-divide"></i></button>
+                        <button class="wide-buttons" style="background-color: #23a056;" onclick="clearScreen()"><i
+                                class="fa-solid fa-c"></i></button>
+                        <button onclick="backSpace()"><i class="fa-solid fa-delete-left"></i></button>
+                    </div>
+                    <div class="second-row">
+                        <button style="background-color: #23a056;" onclick="appendOperator('*')"><i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button onclick="appendNumber(7)"><i class="fa-solid fa-7"></i></button>
+                        <button onclick="appendNumber(8)"><i class="fa-solid fa-8"></i></button>
+                        <button onclick="appendNumber(9)"><i class="fa-solid fa-9"></i></button>
+                    </div>
+                    <div class="third-row">
+                        <button style="background-color: #23a056;" onclick="appendOperator('-')"><i
+                                class="fa-solid fa-minus"></i></button>
+                        <button onclick="appendNumber(4)"><i class="fa-solid fa-4"></i></button>
+                        <button onclick="appendNumber(5)"><i class="fa-solid fa-5"></i></button>
+                        <button onclick="appendNumber(6)"><i class="fa-solid fa-6"></i></button>
+                    </div>
+                    <div class="fourth-row">
+                        <button style="background-color: #23a056;" onclick="appendOperator('+')"><i
+                                class="fa-solid fa-plus"></i></button>
+                        <button onclick="appendNumber(1)"><i class="fa-solid fa-1"></i></button>
+                        <button onclick="appendNumber(2)"><i class="fa-solid fa-2"></i></button>
+                        <button onclick="appendNumber(3)"><i class="fa-solid fa-3"></i></button>
+                    </div>
+                    <div class="fifth-row">
+                        <button style="background-color: #23a056;" onclick="appendDecimal('.')"><i
+                                class="fa-solid fa-circle"></i></button>
+                        <button onclick="appendNumber(0)"><i class="fa-solid fa-0"></i></button>
+                        <button class="wide-buttons" onclick="calculateResult()"><i
+                                class="fa-solid fa-equals"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
