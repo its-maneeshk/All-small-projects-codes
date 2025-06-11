@@ -1,33 +1,24 @@
 #include<iostream>
 using namespace std;
 
-int withStaticKeyword(int value) {
-    static int num = 0;
-    num += value;
-    return num;
+void withStatic() {
+    static int count = 0;
+    count++;
+    cout << count << endl;
 }
 
-int withoutStaticKeyword(int n) {
-    int num = 0;
-    num += n;
-    return num;
+void withoutStatic() {
+    int count = 0;
+    count++;
+    cout << count << endl;
 }
 int main() {
-    // Calling functions
-    cout << withStaticKeyword(1) << endl;
-    cout << withStaticKeyword(4) << endl;
-    cout << withStaticKeyword(1) << endl;
-    
-    // Calling functions
-    cout << endl;
-    cout << withoutStaticKeyword(1) << endl;
-    cout << withoutStaticKeyword(4) << endl;
-    cout << withoutStaticKeyword(1) << endl;
-    
-    // Calling functions
-    // Here value of static num is hold that is (6) so * marked ans is updated to 7 i.e 6+1=7
-    cout << endl;
-    cout << withStaticKeyword(1) << '*' <<endl;
-    cout << withStaticKeyword(4) << endl;
-    cout << withStaticKeyword(1) << endl;
+    withStatic();
+    withStatic();
+    withStatic();
+        cout << endl;
+    withoutStatic();
+    withoutStatic();
+    withoutStatic();
+
 }
