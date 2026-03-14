@@ -1,17 +1,19 @@
 {
   "expo": {
-    "name": "Learning_React_Native",
-    "slug": "Learning_React_Native",
+    "name": "loginPage",
+    "slug": "loginPage",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "learningreactnative",
+    "scheme": "loginpage",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ItsManeeshK.loginpage",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -43,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a9fadcf4-9e7d-4a71-896e-5fd6a5f871f0"
+      }
     }
   }
 }
