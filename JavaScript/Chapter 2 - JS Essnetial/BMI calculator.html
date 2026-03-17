@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 2 | BMI calculator</title>
+    </head>
+    <body>
+        <h1>Let's calculate BMI</h1>
+        <p>See Result in console 👉</p>
+        <script>
+            let height = 70; //Height in Inches
+            let weight = 180; //Weight in Pounds
+
+            let heightInCM = height * 2.54;
+            let weightInKilo = (weight/2.2046);
+
+            let heightInM = heightInCM / 100; //Height in Meter
+
+            console.log(`Given height is ${height} inch : ${heightInCM}`);
+            console.log(`Given weight is ${weight } pounds : ${weightInKilo}`);
+
+            let BMI = weightInKilo/((heightInM)**2);
+            
+            console.log(`BMI: ${BMI}`);
+        </script>
+    </body>
+</html>
