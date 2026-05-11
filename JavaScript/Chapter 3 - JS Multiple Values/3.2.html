@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice Excercise 3.2 | Page: 97</title>
+</head>
+
+<body>
+    <h1>Practice Excercise 3.2 | Page: 97</h1>
+    <script>
+        // 1
+        let emptyArr4ShoppingList = [];
+        console.log("Empty array: ", emptyArr4ShoppingList);
+
+        // 2
+        emptyArr4ShoppingList.push("Milk", "Bread", "Apples");
+        console.log("Adding Groceries to array: ", emptyArr4ShoppingList);
+
+        // 3
+        emptyArr4ShoppingList.splice(1, 1, "Banana", "Eggs");
+        console.log("Adding & Replacing element: ", emptyArr4ShoppingList);
+
+        // 4
+        emptyArr4ShoppingList.pop();
+        console.log("Removeing Last element: ", emptyArr4ShoppingList);
+
+        // 5
+        emptyArr4ShoppingList.sort();
+        console.log("Sorting in Alphabetical oreder: ", emptyArr4ShoppingList);
+
+        // 6
+        let data = emptyArr4ShoppingList.find(e => e === "Milk");
+        console.log(data);
+        let indexOfElement = emptyArr4ShoppingList.indexOf("Milk");
+        console.log(indexOfElement);
+
+        // 7
+        emptyArr4ShoppingList.splice(1, 0, "Carrots", "Lettuce");
+        console.log("Adding element after Banana: ", emptyArr4ShoppingList);
+
+        // 8
+        let newList = ["Juice", "Pop"];
+
+        // 9
+        let newFinalList = emptyArr4ShoppingList.concat(newList);
+        console.log("Combining new list to older one", newFinalList);
+
+        // 10
+        emptyArr4ShoppingList.push(...newList, ...newList);
+        console.log("Adding new list 2 times at last of first one: ", emptyArr4ShoppingList);
+
+        // 11
+        let indexOflast = emptyArr4ShoppingList.lastIndexOf("Pop");
+        console.log("Last index of duplicate item: ",indexOflast);
+
+
+    </script>
+</body>
+
+</html>
