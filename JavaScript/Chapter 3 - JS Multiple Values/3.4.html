@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice Excercise 3.4 | Page: 103</title>
+</head>
+
+<body>
+    <h1>Practice Excercise 3.4 | Page: 103</h1>
+    <script>
+        // 1
+        let myCar = {
+            name: "Volvo",
+            model: 1958,
+            chessieNumber: "185A484FSC5",
+            tank: "5.25 ml",
+            torque: 9.6,
+            aiEnabeled: true,
+        };
+
+        // 2
+        let variable = "color";
+        myCar[variable] = "Pitch Black";
+        console.log(myCar);
+        myCar[variable] = "Volvet Red";
+        console.log(myCar);
+
+        // 3
+        variable = "forSale";
+        myCar[variable] = true;
+        console.log(myCar);
+
+        // 4
+        console.log("Car Model:", myCar.model, "Car Name:", myCar.name);
+
+        // 5
+        console.log("Available for sale: ", myCar.forSale);
+
+    </script>
+</body>
+
+</html>
