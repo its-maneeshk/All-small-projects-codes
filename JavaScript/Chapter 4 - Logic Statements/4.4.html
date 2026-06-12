@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice Excercise 4.4 | Page: 123</title>
+</head>
+
+<body>
+    <h1>Logic Statements of chapter 4</h1>
+    <p>Some may be in console</p>
+    <script>
+        let randomNumber = Math.floor(Math.random() * 5);
+        let userInput = prompt("Enter the Value: ");
+        let message;
+        switch (randomNumber) {
+            case 0:
+                message = "Got 0 as a random number.";
+                break;
+            case 1:
+                message = "Got 1 as a random number.";
+                break;
+            case 2:
+                message = "Got 2 as a random number.";
+                break;
+            case 3:
+                message = "Got 3 as a random number.";
+                break;
+            case 4:
+                message = "Got 4 as a random number.";
+                break;
+            case 5:
+                message = "Got 5 as a random number.";
+                break;
+            default:
+                message = "Got random number greater then 5";
+                break;
+        }
+        console.log(userInput + " " + message);
+    </script>
+</body>
+
+</html>

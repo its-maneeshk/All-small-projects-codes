@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Excercise 4.2 | Page: 117</title>
+    </head>
+    <body>
+        <h1>Logic Statements of chapter 4</h1>
+        <p>Some may be in console</p>
+        <script>
+            let userInput = prompt("Enter age: ");
+            let age = Number(userInput);
+            let message;
+            if(age >= 21) {
+                message = ("Confirm entry to a venue and the ability to purchase alcohol");
+            }
+            else if(age >= 19) {
+                message = ("Confirm entry to a venue but deny to purchase alcohol");
+            }
+            else {
+                message = ("Deny entry if none are true");
+            }
+
+            console.log(message);
+        </script>
+    </body>
+</html>
