@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chapter Projects | Page: 109</title>
+</head>
+
+<body>
+    <h1>Chapter Projects | Page: 109</h1>
+    <p>1. Manuplating an array</p>
+
+    <script>
+        // 1.1.1
+        const theList = ['Laurence', 'Svekis', true, 35, null, undefined, 'Manish'];
+        let firstElement = theList.shift();
+        let lastElement = theList.pop();
+        console.log("Removing the first item & last element ", theList);
+
+        // 1.1.2
+        let newList = theList.unshift("FIRST");
+        console.log(theList);
+
+        // 1.1.3
+        let addItem = theList.splice(4, 0, "hello world");
+        console.log(theList);
+
+        // 1.1.4
+        let addItem2 = theList.splice(3, 0, "MIDDLE");
+        console.log(theList);
+        
+        // 1.1.5
+        let addAtLast = theList.push("LAST");
+        console.log(theList);
+        
+        // 1.1.6
+        console.log(theList);
+        
+    </script>
+
+</body>
+
+</html>

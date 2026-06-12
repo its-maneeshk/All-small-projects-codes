@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chapter Projects | Page: 109</title>
+</head>
+
+<body>
+    <h1>Chapter Projects | Page: 109</h1>
+    <p>2. Company Product Catalog</p>
+
+    <script>
+        // 1
+        let storeItem = [];
+
+        // 2
+        let item1 = {
+            name: "Bundle of Mouse",
+            model: "2015A8-14",
+            cost: "$50",
+            quantity: "1000"
+        }
+        let item2 = {
+            name: "Bundle of Keyboards",
+            model: "AF501-52",
+            cost: "$30",
+            quantity: "505"
+        }
+        let item3 = {
+            name: "Bundle of SSD's",
+            model: "BF5551-882",
+            cost: "$400",
+            quantity: "2000"
+        }
+
+        // 3
+        storeItem.push(item1, item2, item3);
+        console.log(storeItem);
+
+        // 4
+        let quantityOfThirdItem = storeItem[2].quantity;
+        console.log("Quantity of third item : ",quantityOfThirdItem);
+    </script>
+
+
+</body>
+
+</html>
