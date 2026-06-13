@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice Excercise 4.5 | Page: 125</title>
+</head>
+
+<body>
+    <h1>Logic Statements of chapter 4</h1>
+    <p>Some may be in console</p>
+    <script>
+        let prize;
+        let userInput = prompt("Choose price S.N. (1 to 4): \n 1. $50 \n 2. $180 \n 3. $250 \n 4. $270");
+        let sn = Number(userInput);
+        switch(sn) {
+            case 1:
+                prize = '$50';
+                break;
+            case 2:
+                prize = '$180';
+                break;
+            case 3:
+                prize = '250';
+                break;
+            case 4:
+                prize = '270';
+                break;
+            default:
+                prize = "wrong S.N. Selected.";
+                break;
+        }
+        console.log("My Selection:" + " " + prize);
+    </script>
+</body>
+
+</html>

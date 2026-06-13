@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chapter Projects | Page: 126</title>
+</head>
+
+<body>
+    <h1>Chapter Projects | Page: 126</h1>
+    <h2>Rock Paper Scissors game</h2>
+    <h4>Q.N This is a game between a player and the computer, where both will make a
+        random selection of either Rock, Paper, or Scissors (alternatively, you could
+        create a version using real player input!). Rock will beat out Scissors, Paper
+        will beat out Rock, and Scissors will beat out Paper. You can use JavaScript
+        to create your own version of this game, applying the logic with an if
+        statement. Since this project is a little more difficult, here are some
+        suggested steps:
+    </h4>
+    <ol>
+        <li>Create an array that contains the variables Rock, Paper, and Scissors. </li>
+        <li>Set up a variable that generates a random number 0-2 for the player and then do the same for the computer's
+            selection. The number represents the index values in the array of the 3 items. Page 126 of 663</li>
+        <li>Create a variable to hold a response message to the user. This can show the random results for the player
+            and then also the result for the computer of the matching item from the array.</li>
+        <li>Create a condition to handle the player and computer selections. If both are the same, this results in a
+            tie.</li>
+        <li>Use conditions to apply the game logic and return the correct results. There are several ways to do this
+            with the condition statements, but you could check which player's index value is bigger and assign the
+            victory accordingly, with the exception of Rock beating Scissors.</li>
+        <li>Add a new output message that shows the player selection versus the computer selection and the result of the
+            game.</li>
+    </ol>
+
+    <script>
+        let items = ["Rock", "Paper", "Scissors"];
+        let  user= Math.floor(Math.random() * 3);
+        // let user = Number(prompt("Enter for user: "));
+        let  computer= Math.floor(Math.random() * 3);
+        // let computer = Number(prompt("Enter for Computer: "));
+
+        let message;
+
+        if(items[user] === items[computer]) {
+            message = "It's a tie";
+        }
+        // exception of rock beating scissors
+        else if(user === 0 && computer === 2 || computer === 0 && user ===2) {
+            message = "Exceptional, Rock cannot beat Scissors";
+        }
+        // other all conditions
+        else {
+            if(user > computer) {
+                message = "User wins!";
+            }
+            else {
+                message = "Computer wins!";
+            }
+        }
+        console.log(user + " vs " + computer + "\n" + message);
+
+    </script>
+</body>
+
+</html>
